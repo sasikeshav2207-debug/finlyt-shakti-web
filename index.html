@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FinLytTech Shakti — She runs a business. She can't read her own P&L.</title>
-  <meta name="description" content="Financial intelligence for India's women entrepreneurs. Plain-English MIS, MUDRA-Ready credit reports, and SHG accounting from your Tally / Zoho books. From ₹99/month." />
+  <title>FinLytTech Shakti — She built the business. We built the tools.</title>
+  <meta name="description" content="Financial intelligence for India's women entrepreneurs. Plain-English MIS, MUDRA-Ready credit reports, and SHG accounting from Tally / Zoho books. From ₹99/month. Built by Chartered Accountants alongside Chartered Accountants." />
   <link rel="canonical" href="https://shakti.finlyt.net/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://shakti.finlyt.net/" />
-  <meta property="og:title" content="FinLytTech Shakti — Financial Intelligence for India's Women Entrepreneurs" />
-  <meta property="og:description" content="She runs a business. She can't read her own P&L. We change that. Plain-English MIS, MUDRA-Ready credit reports, SHG accounting. From ₹99/month." />
+  <meta property="og:title" content="FinLytTech Shakti — She built the business. We built the tools." />
+  <meta property="og:description" content="Plain-English MIS, MUDRA-Ready credit reports, SHG accounting. From ₹99/month. Built by CAs, alongside CAs." />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FinLytTech Shakti — She runs a business. She can't read her own P&L." />
-  <meta name="twitter:description" content="Financial intelligence for India's women entrepreneurs. Built by Chartered Accountants." />
+  <meta name="twitter:title" content="FinLytTech Shakti — She built the business. We built the tools." />
+  <meta name="twitter:description" content="Financial intelligence for India's women entrepreneurs. Built alongside Chartered Accountants." />
 
   <script type="application/ld+json">
   {
@@ -21,17 +21,16 @@
     "@type": "Organization",
     "name": "FinLytTech Shakti",
     "url": "https://shakti.finlyt.net",
-    "description": "Financial inclusion platform for women entrepreneurs and SHGs in India."
+    "description": "Financial inclusion platform for women entrepreneurs and SHGs in India. Built by CAs, alongside CAs."
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Noto+Serif+Devanagari:wght@400;500;700&display=swap" rel="stylesheet" />
 
   <style>
-    /* ─── PALETTE v2 — cooler, modern, less spiritual ──────────────────── */
+    /* ─── Palette v3 — cool clean, dignified, no parchment ──────────── */
     :root {
       --indigo: #1E3A5F;
       --indigo-deep: #122541;
@@ -41,23 +40,18 @@
       --coral: #D87A6A;
       --brass: #B89651;
       --brass-soft: rgba(184,150,81,0.12);
-
-      /* NEW: cool clean background replacing the parchment cream */
-      --surface: #FAFAF7;          /* was #F8F1E3 — cleaner, less religious */
+      --surface: #FAFAF7;
       --surface-elev: #FFFFFF;
-      --surface-cool: #F1F3F6;     /* cool grey for data/secondary blocks */
-      --surface-warm: #F5EFE4;     /* tinted warm — used sparingly for emphasis */
-
+      --surface-cool: #F1F3F6;
+      --surface-warm: #F5EFE4;
       --ink: #14202E;
       --ink-soft: #36465B;
       --muted: #6B7888;
       --line: rgba(20,32,46,0.10);
       --line-soft: rgba(20,32,46,0.06);
-
       --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
       --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
       --devanagari: 'Noto Serif Devanagari', serif;
-
       --green: #1D9E75;
       --amber: #C68A1B;
       --red: #B0392A;
@@ -77,7 +71,6 @@
     a { color: var(--indigo); }
     img, svg { max-width: 100%; display: block; }
 
-    /* ─── Reveal-on-scroll ───────────────────────────────────────── */
     .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
     .reveal.visible { opacity: 1; transform: none; }
     .reveal.d1 { transition-delay: 0.08s; }
@@ -144,7 +137,7 @@
       .nav-hamburger { display: inline-flex; }
     }
 
-    /* ─── Sidebar drawer (mobile) ────────────────────────────────── */
+    /* ─── Sidebar drawer ─────────────────────────────────────────── */
     #sidebar-overlay {
       position: fixed; inset: 0;
       background: rgba(20,32,46,0.55);
@@ -184,70 +177,76 @@
     }
     #sidebar a:hover { color: var(--brass); }
 
-    /* ─── PHOTO HERO — full bleed editorial ──────────────────────── */
-    .hero-photo {
+    /* ─── Hero (no photo — gradient + decorative pattern) ────────── */
+    .hero-illus {
       position: relative;
-      height: clamp(580px, 88vh, 800px);
-      max-height: 800px;
-      overflow: hidden;
+      min-height: clamp(540px, 78vh, 720px);
       background:
-        linear-gradient(135deg, #2a3f5c 0%, #1a2940 100%);
+        radial-gradient(ellipse at 75% 18%, rgba(184,150,81,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse at 8% 95%, rgba(194,78,46,0.18) 0%, transparent 50%),
+        linear-gradient(135deg, #1A2D49 0%, #102240 100%);
+      overflow: hidden;
     }
-    .hero-photo .hero-img {
-      position: absolute; inset: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      filter: brightness(0.65) saturate(1.05);
-    }
-    .hero-photo::after {
+    /* Subtle decorative grid pattern (geometric, non-religious) */
+    .hero-illus::before {
       content: '';
       position: absolute; inset: 0;
-      background:
-        linear-gradient(180deg, rgba(20,32,46,0.55) 0%, transparent 30%, transparent 60%, rgba(20,32,46,0.85) 100%),
-        linear-gradient(90deg, rgba(20,32,46,0.6) 0%, transparent 50%);
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
       pointer-events: none;
     }
-    .hero-photo .hero-content {
+    /* Decorative geometric mark on right side (large, faint) */
+    .hero-illus .hero-deco {
+      position: absolute;
+      right: -80px; top: 50%; transform: translateY(-50%);
+      width: 480px; height: 480px;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    @media (max-width: 880px) { .hero-illus .hero-deco { right: -180px; opacity: 0.07; } }
+    .hero-content {
       position: relative; z-index: 2;
       max-width: 1240px; margin: 0 auto;
-      height: 100%;
-      padding: 60px 28px 80px;
-      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 100px 28px 90px;
       color: var(--surface-elev);
+      max-width: 1240px;
     }
+    .hero-content-inner { max-width: 760px; }
     .hero-eyebrow {
       font-size: 11px; font-weight: 700;
       letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--brass);
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       display: inline-flex; align-items: center; gap: 10px;
     }
     .hero-eyebrow::before {
       content: ''; display: inline-block;
       width: 32px; height: 1.5px; background: var(--brass);
     }
-    h1.hero-photo-headline {
+    h1.hero-headline {
       font-family: var(--serif);
       font-size: clamp(38px, 6vw, 76px);
       font-weight: 400;
       line-height: 1.04;
       letter-spacing: -0.025em;
       margin: 0 0 22px;
-      max-width: 920px;
       color: var(--surface-elev);
     }
-    h1.hero-photo-headline em {
+    h1.hero-headline em {
       font-style: italic;
       color: var(--brass);
     }
-    .hero-photo-tagline {
-      max-width: 580px;
+    .hero-tagline {
       font-size: clamp(15px, 1.6vw, 18px);
       color: rgba(255,255,255,0.86);
-      line-height: 1.65;
+      line-height: 1.7;
       margin: 0 0 28px;
+      max-width: 640px;
     }
-    .hero-photo-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-tagline strong { color: var(--surface-elev); font-weight: 600; }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 14px 26px;
@@ -274,21 +273,7 @@
     .btn-brass { background: var(--brass); color: var(--ink); box-shadow: 0 6px 20px rgba(184,150,81,0.3); }
     .btn-brass:hover { background: #a48648; }
 
-    /* ─── Scroll cue ─────────────────────────────────────────────── */
-    .scroll-cue {
-      position: absolute; bottom: 24px; left: 50%;
-      transform: translateX(-50%);
-      color: rgba(255,255,255,0.6);
-      font-size: 11px;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      display: flex; flex-direction: column; align-items: center; gap: 8px;
-      z-index: 2;
-      animation: bob 2.4s ease-in-out infinite;
-    }
-    @keyframes bob { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(6px); } }
-    @media (prefers-reduced-motion: reduce) { .scroll-cue { animation: none; } }
-
-    /* ─── EDITORIAL STAT BAND ────────────────────────────────────── */
+    /* ─── Editorial stat band ────────────────────────────────────── */
     .stat-band {
       background: var(--ink); color: var(--surface-elev);
       padding: 80px 28px;
@@ -329,7 +314,7 @@
       margin-top: 6px; letter-spacing: 0.06em;
     }
 
-    /* ─── STORY CARDS WITH PHOTOS ────────────────────────────────── */
+    /* ─── Stories intro ──────────────────────────────────────────── */
     .stories-intro {
       max-width: 1240px; margin: 0 auto;
       padding: 96px 28px 32px;
@@ -360,6 +345,7 @@
       line-height: 1.75;
     }
 
+    /* ─── Story cards with illustrated panels (not photos) ──────── */
     .stories-grid {
       max-width: 1240px; margin: 0 auto;
       padding: 56px 28px 96px;
@@ -375,28 +361,54 @@
       transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s;
     }
     .story-card:hover { transform: translateY(-6px); box-shadow: 0 30px 50px rgba(20,32,46,0.10); }
-    .story-card .photo-wrap {
+
+    /* Illustrated panel replaces .photo-wrap > img */
+    .illus-panel {
       aspect-ratio: 4 / 3;
       position: relative;
       overflow: hidden;
-      background: linear-gradient(135deg, var(--surface-warm), var(--surface-cool));
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.95);
     }
-    .story-card .photo-wrap img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s cubic-bezier(0.16,1,0.3,1);
+    .illus-panel.bg-indigo { background: linear-gradient(135deg, #1E3A5F 0%, #2C4D75 100%); }
+    .illus-panel.bg-terracotta { background: linear-gradient(135deg, #C24E2E 0%, #D87A5A 100%); }
+    .illus-panel.bg-brass { background: linear-gradient(135deg, #2F3E58 0%, #4B5E80 100%); }
+    .illus-panel::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
     }
-    .story-card:hover .photo-wrap img { transform: scale(1.04); }
-    .story-card .photo-badge {
-      position: absolute; top: 16px; left: 16px;
-      font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
-      padding: 5px 10px;
-      background: rgba(20,32,46,0.78);
+    .illus-panel .ip-glow {
+      position: absolute; inset: auto -50px -50px auto;
+      width: 240px; height: 240px;
+      background: radial-gradient(circle, rgba(184,150,81,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .illus-panel svg.illus { position: relative; z-index: 1; }
+    .illus-panel .persona-tag {
+      position: absolute; bottom: 16px; left: 18px; right: 18px;
+      display: flex; justify-content: space-between; align-items: flex-end;
+      z-index: 2;
+    }
+    .illus-panel .persona-name {
+      font-family: var(--serif); font-style: italic; font-weight: 500;
+      font-size: 18px; line-height: 1.2;
+      color: var(--surface-elev);
+    }
+    .illus-panel .layer-badge {
+      font-size: 9.5px; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 100px;
+      background: rgba(0,0,0,0.32);
       color: var(--brass);
-      border-radius: 100px;
+      align-self: flex-end;
       -webkit-backdrop-filter: blur(8px);
       backdrop-filter: blur(8px);
     }
+
     .story-card .content {
       padding: 28px 28px 26px;
       display: flex; flex-direction: column;
@@ -457,7 +469,15 @@
       font-family: var(--serif); font-size: 17px; color: var(--surface-elev);
     }
 
-    /* ─── TRANSITION BLOCK ───────────────────────────────────────── */
+    /* Tiny note under stories grid acknowledging photo placeholder */
+    .stories-note {
+      max-width: 1240px; margin: -24px auto 0; padding: 0 28px 80px;
+      text-align: center;
+      font-size: 12px; color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ─── Transition block ───────────────────────────────────────── */
     .transition-block {
       background: var(--surface-cool);
       padding: 84px 28px;
@@ -913,7 +933,6 @@
     }
     .f-bottom a { color: rgba(255,255,255,0.7); text-decoration: none; }
 
-    /* ─── A11y ──────────────────────────────────────────────────── */
     :focus-visible { outline: 2px solid var(--terracotta); outline-offset: 3px; border-radius: 4px; }
   </style>
 </head>
@@ -928,7 +947,7 @@
         <span class="w-sub">Shakti</span>
       </a>
       <div class="nav-links">
-        <a href="#why">Why</a>
+        <a href="#why">Why Shakti</a>
         <a href="#products">Products</a>
         <a href="#mudra">MUDRA-Ready</a>
         <a href="#for-cas">For CAs</a>
@@ -947,7 +966,7 @@
     <button class="sb-close" id="close-sidebar" aria-label="Close menu">×</button>
     <div class="sb-section">
       <div class="sb-label">Navigate</div>
-      <a href="#why" data-close>The problem</a>
+      <a href="#why" data-close>Why Shakti</a>
       <a href="#products" data-close>Three products</a>
       <a href="#mudra" data-close>MUDRA-Ready Score</a>
       <a href="#journey" data-close>The journey</a>
@@ -968,21 +987,36 @@
     </div>
   </aside>
 
-  <!-- ═════════════════════════ PHOTO HERO ══════════════════════════ -->
-  <section class="hero-photo">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1800&q=80&auto=format&fit=crop" alt="Woman entrepreneur at her small business" loading="eager" onerror="this.style.display='none'" />
+  <!-- ═════════════════════════ HERO (no photo) ═════════════════════ -->
+  <section class="hero-illus">
+    <!-- Decorative geometric mark (faint, large, right side) -->
+    <svg class="hero-deco" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="200" cy="200" r="180" stroke="#FFFFFF" stroke-width="1"/>
+      <circle cx="200" cy="200" r="140" stroke="#FFFFFF" stroke-width="1"/>
+      <circle cx="200" cy="200" r="100" stroke="#FFFFFF" stroke-width="1"/>
+      <circle cx="200" cy="200" r="60" stroke="#FFFFFF" stroke-width="1"/>
+      <line x1="20" y1="200" x2="380" y2="200" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="4 6"/>
+      <line x1="200" y1="20" x2="200" y2="380" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="4 6"/>
+      <line x1="73" y1="73" x2="327" y2="327" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="4 6"/>
+      <line x1="327" y1="73" x2="73" y2="327" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="4 6"/>
+    </svg>
+
     <div class="hero-content">
-      <div class="hero-eyebrow">For India's women entrepreneurs</div>
-      <h1 class="hero-photo-headline">She runs a business.<br><em>She can't read her own P&amp;L.</em></h1>
-      <p class="hero-photo-tagline">A tailor. A caterer. A shopkeeper. A treasurer of an SHG holding ₹4 lakh in trust for fifteen women. Their CA files their returns. Their bank rejects their loans for "inadequate documentation". They built a business; they were never given a way to read it. We change that.</p>
-      <div class="hero-photo-ctas">
-        <a class="btn btn-primary" href="#why">See the problem →</a>
-        <a class="btn btn-ghost" href="#products">Three products →</a>
+      <div class="hero-content-inner">
+        <div class="hero-eyebrow">For India's women entrepreneurs &amp; SHGs</div>
+        <h1 class="hero-headline">She built the business.<br><em>We built the tools.</em></h1>
+        <p class="hero-tagline">
+          A tailor. A caterer. A shopkeeper. A treasurer of an SHG holding ₹4 lakh in trust for fifteen women.
+          Their books exist — kept by their Chartered Accountants for compliance.
+          The management dashboard that turns those books into decisions, the credit-ready report that turns
+          a Tally ledger into a MUDRA application — <strong>those products didn't exist at her price point.</strong>
+          So we built them. Alongside CAs, not around them.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#why">Read the gap →</a>
+          <a class="btn btn-ghost" href="#products">Three products →</a>
+        </div>
       </div>
-    </div>
-    <div class="scroll-cue">
-      <span>Scroll</span>
-      <svg width="14" height="20" viewBox="0 0 14 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 1 v18 M2 14 l5 5 5-5"/></svg>
     </div>
   </section>
 
@@ -990,8 +1024,8 @@
   <section class="stat-band">
     <div class="stat-band-inner">
       <div class="reveal">
-        <h2>The numbers tell <em>one story.</em> The lived experience tells another.</h2>
-        <p>India's women entrepreneurs aren't held back by ambition or capability. The financial-services world simply doesn't see them — because nobody built the bridge between their books and a lender's checklist.</p>
+        <h2>The numbers say <em>one thing.</em> The lived reality says something stricter.</h2>
+        <p>India's women entrepreneurs aren't held back by ambition or capability. The financial-services infrastructure simply hasn't built the bridge between their books and a lender's checklist. The bridge is what we're building.</p>
       </div>
       <div class="stats reveal d1">
         <div class="stat">
@@ -1022,23 +1056,47 @@
   <div id="why">
     <div class="stories-intro reveal">
       <div class="section-label">Why we built this</div>
-      <h2 class="section-h2">Three women.<br><em>Three layers of financial invisibility.</em></h2>
-      <p class="section-sub">Each of these is a real situation we've seen first-hand at CA firm pilots and SHG conversations. The names are composites; the gap is exactly what we describe.</p>
+      <h2 class="section-h2">Three women.<br><em>Three gaps in the market.</em></h2>
+      <p class="section-sub">Each gap is structural — about what tools the market never built, not about what anyone failed to do. Names below are composites; the situations are exactly what we've heard from CA-firm partners and SHG conversations.</p>
     </div>
 
     <div class="stories-grid">
 
       <!-- Story 1 — SHG Treasurer -->
       <article class="story-card reveal d1">
-        <div class="photo-wrap">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=900&q=80&auto=format&fit=crop" alt="A woman managing accounts for her self-help group" loading="lazy" onerror="this.style.display='none'" />
-          <div class="photo-badge">Layer 1 · SHG</div>
+        <div class="illus-panel bg-indigo">
+          <div class="ip-glow"></div>
+          <svg class="illus" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <!-- Stylised ledger book + linked circles representing group members -->
+            <rect x="22" y="34" width="44" height="56" rx="3" stroke-width="2"/>
+            <line x1="22" y1="42" x2="66" y2="42" stroke-width="1"/>
+            <line x1="28" y1="50" x2="60" y2="50" stroke-width="1" opacity="0.6"/>
+            <line x1="28" y1="58" x2="60" y2="58" stroke-width="1" opacity="0.6"/>
+            <line x1="28" y1="66" x2="60" y2="66" stroke-width="1" opacity="0.6"/>
+            <line x1="28" y1="74" x2="60" y2="74" stroke-width="1" opacity="0.6"/>
+            <line x1="28" y1="82" x2="48" y2="82" stroke-width="1" opacity="0.6"/>
+            <!-- group of linked circles -->
+            <circle cx="82" cy="42" r="6"/>
+            <circle cx="98" cy="42" r="6"/>
+            <circle cx="82" cy="58" r="6"/>
+            <circle cx="98" cy="58" r="6"/>
+            <circle cx="82" cy="74" r="6"/>
+            <circle cx="98" cy="74" r="6"/>
+            <line x1="82" y1="48" x2="82" y2="52" opacity="0.5"/>
+            <line x1="98" y1="48" x2="98" y2="52" opacity="0.5"/>
+            <line x1="88" y1="42" x2="92" y2="42" opacity="0.5"/>
+            <line x1="88" y1="58" x2="92" y2="58" opacity="0.5"/>
+          </svg>
+          <div class="persona-tag">
+            <div class="persona-name">SHG treasurer</div>
+            <div class="layer-badge">Layer 1</div>
+          </div>
         </div>
         <div class="content">
-          <div class="composite-label">She is</div>
+          <div class="composite-label">A composite</div>
           <h3>The SHG treasurer</h3>
-          <p class="vignette">"I am holding ₹4 lakh of fifteen women's savings in a notebook. The NABARD officer comes; I show her the book. She takes a photo. Nothing comes back to me."</p>
-          <p class="problem"><strong>The problem.</strong> She manages crores of collective wealth on a paper register and a calculator. NABARD's e-Shakti collects her data but gives her nothing in return. Errors in accounts get her group's bank-linkage loan rejected. There is no commercial accounting tool built for an SHG treasurer's reality — until now.</p>
+          <p class="vignette">"I keep the savings of fifteen women in my register. The field officer photographs it and leaves. My data goes one way. My group's own accounts never come back to me."</p>
+          <p class="problem"><strong>The gap.</strong> SHGs aren't taxable entities, so a CA practice can't economically take them on as clients — there's nothing to file. NABARD's e-Shakti collects data extractively but returns no service to the treasurer. The result: no commercial accounting tool was ever built for an SHG treasurer's reality. We built it.</p>
           <div class="answer-strip">
             <div>
               <div class="label-small">We built</div>
@@ -1051,15 +1109,36 @@
 
       <!-- Story 2 — Individual Entrepreneur -->
       <article class="story-card reveal d2">
-        <div class="photo-wrap">
-          <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=900&q=80&auto=format&fit=crop" alt="A woman entrepreneur at her tailoring shop" loading="lazy" onerror="this.style.display='none'" />
-          <div class="photo-badge">Layer 2 · Individual</div>
+        <div class="illus-panel bg-terracotta">
+          <div class="ip-glow"></div>
+          <svg class="illus" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <!-- Stylised dashboard with bar chart + ratio indicator + currency dot -->
+            <rect x="22" y="22" width="76" height="60" rx="3" stroke-width="2"/>
+            <!-- Bar chart inside -->
+            <line x1="30" y1="72" x2="34" y2="72" stroke-width="6" opacity="0.7"/>
+            <line x1="40" y1="68" x2="44" y2="68" stroke-width="10" opacity="0.7"/>
+            <line x1="50" y1="60" x2="54" y2="60" stroke-width="18" opacity="0.7"/>
+            <line x1="60" y1="52" x2="64" y2="52" stroke-width="26" opacity="0.7"/>
+            <line x1="70" y1="48" x2="74" y2="48" stroke-width="30" opacity="0.85"/>
+            <line x1="80" y1="42" x2="84" y2="42" stroke-width="38" opacity="0.85"/>
+            <!-- Header dots -->
+            <circle cx="30" cy="32" r="2.5"/>
+            <circle cx="38" cy="32" r="2.5" opacity="0.7"/>
+            <circle cx="46" cy="32" r="2.5" opacity="0.5"/>
+            <!-- Currency rupee element -->
+            <circle cx="60" cy="100" r="12" stroke-width="2"/>
+            <path d="M55 95h10M55 99h10M58 95l5 10" stroke-width="1.5"/>
+          </svg>
+          <div class="persona-tag">
+            <div class="persona-name">Individual entrepreneur</div>
+            <div class="layer-badge">Layer 2</div>
+          </div>
         </div>
         <div class="content">
-          <div class="composite-label">She is</div>
+          <div class="composite-label">A composite</div>
           <h3>The individual entrepreneur</h3>
-          <p class="vignette">"My CA files my GST every month and hands me a paper. I sign it. I don't understand a single line. I don't know if my business made money."</p>
-          <p class="problem"><strong>The problem.</strong> She runs a tailoring unit, food business, retail outlet or services firm. She has Tally or Zoho through her CA. She has never seen her own P&amp;L. She doesn't know her gross margin, her DSO, or whether she's growing in real terms — and Western fintech tools (Zeni, Float, Jirav) cost $500–$2000/month with no Tally support.</p>
+          <p class="vignette">"My CA handles my compliance — GST, statutory filings, audit. That's the engagement. What I never had was a Tuesday-afternoon view of how my own business is doing this month."</p>
+          <p class="problem"><strong>The gap.</strong> She has Tally or Zoho through her CA — for compliance, properly. Management Information System (MIS) reporting at her scale was never economical to productise: larger firms got CFOs and $500–$2000/mo Western tools; nobody built the equivalent for a ₹10–50 lakh-turnover business. Shakti is that missing tier.</p>
           <div class="answer-strip">
             <div>
               <div class="label-small">We built</div>
@@ -1072,15 +1151,39 @@
 
       <!-- Story 3 — Credit Applicant -->
       <article class="story-card reveal d3">
-        <div class="photo-wrap">
-          <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?w=900&q=80&auto=format&fit=crop" alt="A woman entrepreneur at the bank for a loan application" loading="lazy" onerror="this.style.display='none'" />
-          <div class="photo-badge">Layer 3 · Credit</div>
+        <div class="illus-panel bg-brass">
+          <div class="ip-glow"></div>
+          <svg class="illus" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <!-- Stylised credit report / document with check mark and rupee -->
+            <rect x="28" y="20" width="48" height="68" rx="3" stroke-width="2"/>
+            <line x1="36" y1="32" x2="68" y2="32" stroke-width="1.2"/>
+            <line x1="36" y1="40" x2="62" y2="40" stroke-width="1" opacity="0.7"/>
+            <line x1="36" y1="46" x2="65" y2="46" stroke-width="1" opacity="0.7"/>
+            <!-- score circle -->
+            <circle cx="52" cy="62" r="12" stroke-width="2"/>
+            <text x="52" y="66" text-anchor="middle" font-family="Fraunces, serif" font-size="11" font-weight="500" fill="currentColor">78</text>
+            <!-- approval check stamp -->
+            <circle cx="86" cy="62" r="14" stroke-width="2" opacity="0.85"/>
+            <path d="M80 62l4 4 8-8" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- bank columns at bottom -->
+            <line x1="32" y1="100" x2="88" y2="100" stroke-width="1.5"/>
+            <line x1="36" y1="100" x2="36" y2="92" stroke-width="1.2"/>
+            <line x1="48" y1="100" x2="48" y2="92" stroke-width="1.2"/>
+            <line x1="60" y1="100" x2="60" y2="92" stroke-width="1.2"/>
+            <line x1="72" y1="100" x2="72" y2="92" stroke-width="1.2"/>
+            <line x1="84" y1="100" x2="84" y2="92" stroke-width="1.2"/>
+            <path d="M32 92l28-6 28 6" stroke-width="1.5"/>
+          </svg>
+          <div class="persona-tag">
+            <div class="persona-name">Credit applicant</div>
+            <div class="layer-badge">Layer 3</div>
+          </div>
         </div>
         <div class="content">
-          <div class="composite-label">She is</div>
+          <div class="composite-label">A composite</div>
           <h3>The credit applicant</h3>
-          <p class="vignette">"I'm eligible for a MUDRA Tarun loan. I have 3 years of GST returns. The bank wants 'projected financials and CMA data'. The CA quoted ₹25,000. I don't have it."</p>
-          <p class="problem"><strong>The problem.</strong> Eligible for MUDRA, Stand-Up India, PM Vishwakarma, CGTMSE. The Tally ledger exists. The GST history exists. But nobody converts that history into a lender-ready application — without a ₹15,000–₹50,000 CA engagement. Documentation, not eligibility, is the gap.</p>
+          <p class="vignette">"I'm eligible for a MUDRA Tarun loan up to ₹10 lakh. A proper CMA pack is skilled work — but at micro-loan volumes, the data-assembly hours don't fit the economics. The gap is automation, not expertise."</p>
+          <p class="problem"><strong>The gap.</strong> CMA preparation is genuine professional work — projected financials, ratio analysis, sensitivity scenarios. CAs do it well. But hand-preparing every application doesn't scale to micro-loan volumes. The MUDRA-Ready Report automates the standardised 90%, so the CA's time goes to value-add review and sign-off instead of data assembly from scratch.</p>
           <div class="answer-strip">
             <div>
               <div class="label-small">We built</div>
@@ -1092,14 +1195,15 @@
       </article>
 
     </div>
+    <div class="stories-note">Illustrations on each card · brand photography with real Shakti users to be commissioned for production launch</div>
   </div>
 
   <!-- ═════════════════════════ TRANSITION ══════════════════════════ -->
   <section class="transition-block">
     <div class="inner reveal">
       <div class="section-label">So we built</div>
-      <h2>Three products.<br><em>One platform.</em><br>Same financial intelligence engine.</h2>
-      <p>Built by Chartered Accountants. Designed for first-generation entrepreneurs. Sits on top of the books your CA already maintains. From <strong>₹99/month</strong>.</p>
+      <h2>Three products.<br><em>One platform.</em><br>Built alongside Chartered Accountants.</h2>
+      <p>The CA continues with compliance — that's their service. Shakti sits on top of the books they maintain and gives the entrepreneur the management view, the credit pack, and the SHG accounting that no one had productised at her tier. From <strong>₹99/month</strong>.</p>
       <div class="arrow" aria-hidden="true"></div>
     </div>
   </section>
@@ -1118,7 +1222,7 @@
         <span class="pc-badge">Most chosen</span>
         <div class="pc-name">Shakti</div>
         <div class="pc-price">₹299/mo Core · ₹399/mo Pro <small>+ GST</small></div>
-        <p class="pc-desc">Auto-generated MIS for the individual woman entrepreneur. Tally Prime or Zoho Books in; investor-ready dashboard out.</p>
+        <p class="pc-desc">Auto-generated MIS for the individual woman entrepreneur. Tally Prime or Zoho Books in; investor-ready dashboard out. Works alongside her CA.</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>P&amp;L, Balance Sheet, Cash Flow — auto-generated</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Period-over-period comparison on every statement</li>
@@ -1152,15 +1256,15 @@
         <span class="pc-badge">After 6 months on Shakti</span>
         <div class="pc-name">MUDRA-Ready</div>
         <div class="pc-price">₹499 per report <small>· one-time</small></div>
-        <p class="pc-desc">Verified Shakti data → lender-ready credit application package. The document a CA charges ₹15,000+ to prepare.</p>
+        <p class="pc-desc">Verified Shakti data → lender-ready application package. Automates the data-assembly so the CA's time goes to value-add review and sign-off.</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>MUDRA-Ready Score (0–100) with action plan</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Scheme match: Shishu / Kishore / Tarun / Stand-Up</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Top 3 lenders by geography &amp; sector</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Projected EMI vs. verified monthly surplus</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>2-year projected financials, auto-generated</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Document checklist — what to carry to the bank</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Application narrative ready to attach</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Document checklist + ready-to-attach application narrative</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Designed for CA review &amp; sign-off in minutes</li>
         </ul>
         <a class="pc-cta" href="#mudra">See a sample report ↓</a>
       </article>
@@ -1173,13 +1277,13 @@
     <div class="reveal">
       <div class="section-label">The MUDRA-Ready Report</div>
       <h2 class="section-h2">From financial visibility to <em>financial access.</em></h2>
-      <p class="section-sub">MUDRA has disbursed ₹23 lakh crore across 40 crore loans since 2015. Demand is not the problem — documentation is. Six months on Shakti is enough to turn Tally entries into a lender-ready application.</p>
+      <p class="section-sub">MUDRA has disbursed ₹23 lakh crore across 40 crore loans since 2015. Demand isn't the problem — automating the application is. Six months on Shakti is enough to turn verified Tally entries into a lender-ready package the CA reviews and signs off.</p>
     </div>
 
     <div class="mudra-block reveal d1">
       <div>
-        <h3>Six components.<br>One score. <em>One application</em> that lenders actually accept.</h3>
-        <p class="md-sub">Auto-generated from your verified Shakti data. No CA review. No back-and-forth. 60 seconds.</p>
+        <h3>Six components.<br>One score. <em>One application</em> that lenders accept.</h3>
+        <p class="md-sub">Auto-assembled from your verified Shakti data. Designed so your CA can review, adjust and sign off in minutes — instead of building the spreadsheet from scratch.</p>
         <div class="mudra-steps">
           <div class="mudra-step"><div class="ms-num">1</div><div><div class="ms-title">Business Vintage · 15%</div><div class="ms-body">Operating months verified from Tally entry history + GST registration date</div></div></div>
           <div class="mudra-step"><div class="ms-num">2</div><div><div class="ms-title">Revenue Consistency · 25%</div><div class="ms-body">Coefficient of variation across 12 months — lower volatility = higher score</div></div></div>
@@ -1224,14 +1328,14 @@
         <div class="js-num">2</div>
         <div class="js-stage">Stage two</div>
         <h5>Individual entrepreneur</h5>
-        <p>Graduates to Shakti. Connects Tally / Zoho. First-ever financial report in plain English.</p>
+        <p>Graduates to Shakti. Connects Tally / Zoho. First-ever management dashboard in plain English.</p>
         <div class="js-tool">Shakti Core · ₹299/mo</div>
       </div>
       <div class="journey-step reveal d3">
         <div class="js-num">3</div>
         <div class="js-stage">Stage three</div>
         <h5>Credit applicant</h5>
-        <p>Six months of Shakti data. MUDRA-Ready Score auto-generated. First formal loan disbursed.</p>
+        <p>Six months of Shakti data. MUDRA-Ready Score auto-generated. CA reviews. First formal loan disbursed.</p>
         <div class="js-tool">MUDRA-Ready Report · ₹499</div>
       </div>
       <div class="journey-step reveal d4">
@@ -1248,21 +1352,21 @@
   <section class="block" id="for-cas">
     <div class="reveal">
       <div class="section-label">For Chartered Accountants</div>
-      <h2 class="section-h2">A women-focused vertical<br><em>that scales your practice.</em></h2>
-      <p class="section-sub">If you serve women entrepreneurs, Shakti white-labels for your firm. Deploy across your client roster. Earn 10–15% recurring commission. Position your firm as a women's finance specialist.</p>
+      <h2 class="section-h2">A women-focused vertical<br><em>that extends your practice.</em></h2>
+      <p class="section-sub">Shakti white-labels for your firm. Deploy across your woman-led clients. Earn 10–15% recurring commission. Position your practice as a women's-finance specialist — a fast-growing segment that's structurally under-served by national chains.</p>
     </div>
 
     <div class="ca-block reveal d1">
       <div>
         <h3>One agreement.<br><em>Every woman client</em> on the same intelligence platform.</h3>
-        <p class="ca-sub">No retooling. Your clients keep their Tally / Zoho. You keep the relationship. We do the heavy lifting on the data side.</p>
+        <p class="ca-sub">No retooling. Your clients keep their Tally / Zoho — you keep their compliance work. Shakti adds the management dashboard, the MIS narrative and (when ready) the MUDRA-Ready Report — all branded under your firm.</p>
         <ul class="ca-bullets">
           <li>White-label Shakti as your firm's digital MIS service</li>
           <li>10–15% recurring commission on every paid subscription</li>
-          <li>Auto-generated MUDRA-Ready Reports for women clients</li>
-          <li>Avoid manual report preparation — Shakti handles it</li>
-          <li>Position your firm as a women's finance specialist</li>
-          <li>Reference: founder is CA + IIM Ahmedabad; co-founder is woman CA</li>
+          <li>MUDRA-Ready Reports auto-prepared — you review &amp; sign</li>
+          <li>Your time goes to advisory value-add, not data assembly</li>
+          <li>Position your firm in the fastest-growing borrower segment</li>
+          <li>Reference: founder is CA + IIM Ahmedabad; co-founder is a woman CA</li>
         </ul>
         <a class="btn btn-brass" href="#waitlist">Become a CA partner →</a>
       </div>
@@ -1292,7 +1396,7 @@
     <div class="reveal">
       <div class="section-label">Why Shakti specifically</div>
       <h2 class="section-h2">Designed for her.<br><em>Not retrofitted to look like it is.</em></h2>
-      <p class="section-sub">Every design decision below maps to a documented barrier women entrepreneurs face. Gender-intentional at the architecture level — not "general product with women in the marketing copy".</p>
+      <p class="section-sub">Each design decision below maps to a documented structural barrier. Gender-intentional at the architecture level — not "general product with women in the marketing copy".</p>
     </div>
 
     <div class="why-grid">
@@ -1301,14 +1405,14 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
         <h5>Every metric is a question</h5>
-        <p>Not "Current Ratio = 1.8" but "Do I have enough cash for next month?" Plain language at every label.</p>
+        <p>Not "Current Ratio = 1.8" but "Do I have enough cash for next month?" Plain language at every label, in the entrepreneur's frame.</p>
       </div>
       <div class="why-card reveal d2">
         <div class="wc-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         </div>
         <h5>WhatsApp-native for SHGs</h5>
-        <p>Samuh accepts entries via WhatsApp message. No app download. No smartphone barrier for the treasurer.</p>
+        <p>Samuh accepts entries via WhatsApp message. No app download. No smartphone barrier for the SHG treasurer.</p>
       </div>
       <div class="why-card reveal d3">
         <div class="wc-icon">
@@ -1321,8 +1425,8 @@
         <div class="wc-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
         </div>
-        <h5>Built at her price point</h5>
-        <p>₹299/mo Shakti vs. ₹999/mo for the core FinLytTech product. ₹99/mo for SHGs. Margins that match micro-businesses.</p>
+        <h5>Priced for her tier</h5>
+        <p>₹299/mo Shakti vs. ₹999/mo for the core FinLytTech product. ₹99/mo for SHGs. Margins that match micro-business realities.</p>
       </div>
       <div class="why-card reveal d2">
         <div class="wc-icon">
@@ -1336,7 +1440,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
         <h5>Credit as a journey, not an event</h5>
-        <p>MUDRA-Ready Score positioned as graduation, not application. Removes the shame and confusion around formal credit access.</p>
+        <p>MUDRA-Ready Score positioned as graduation, not application. Removes the friction around first formal credit access.</p>
       </div>
     </div>
   </section>
@@ -1346,7 +1450,7 @@
     <div class="reveal">
       <div class="section-label">Who's behind Shakti</div>
       <h2 class="section-h2">Built by practitioners.<br><em>Not technologists guessing.</em></h2>
-      <p class="section-sub">Two Chartered Accountants. One built the financial intelligence engine. The other brings the women-CA distribution network and is a 51%+ partner of the LLP — gender-intentionality at the entity level, not the marketing copy.</p>
+      <p class="section-sub">Two Chartered Accountants. One built the financial intelligence engine. The other brings the women-CA distribution network and is a 51%+ partner of the LLP — gender-intentionality at the entity level, not in the marketing copy.</p>
     </div>
 
     <div class="founders">
@@ -1370,7 +1474,7 @@
     <div class="community reveal">
       <div class="c-label">#ShakthiCircle</div>
       <h3>Twelve months. Twelve playbooks.<br>Built for her.</h3>
-      <p>A free monthly literacy session every month for a year. Each session paired with a one-page #BuildingforHer Playbook tied directly to your Shakti dashboard. Live-facilitated by Shakti's founding CA — recorded so you can replay anytime.</p>
+      <p>A free monthly literacy session every month for a year. Each session paired with a one-page #BuildingforHer Playbook tied directly to her Shakti dashboard. Live-facilitated by Shakti's founding CA — recorded so you can replay anytime.</p>
       <div class="sessions-grid">
         <div class="session-pill"><div class="sp-month">Month 1</div><div class="sp-title">Reading your own P&amp;L</div></div>
         <div class="session-pill"><div class="sp-month">Month 2</div><div class="sp-title">Cash is king — working capital</div></div>
@@ -1400,17 +1504,22 @@
     <div class="faq-list">
       <details class="faq reveal d1">
         <summary>What is Shakti and who is it for?<span class="faq-icon">+</span></summary>
-        <div class="faq-body">Shakti is FinLytTech's financial intelligence platform built specifically for India's women entrepreneurs. If you run a tailoring unit, food business, retail outlet, or services firm and use Tally Prime or Zoho Books, Shakti gives you an auto-generated MIS in plain English plus a path to a formal MUDRA loan.</div>
+        <div class="faq-body">Shakti is FinLytTech's financial intelligence platform built specifically for India's women entrepreneurs. If you run a tailoring unit, food business, retail outlet, or services firm and use Tally Prime or Zoho Books, Shakti gives you an auto-generated management dashboard in plain English and (when you're ready) a credit-ready MUDRA application package — designed for your CA to review and sign off.</div>
+      </details>
+
+      <details class="faq reveal d1">
+        <summary>How does Shakti work with my Chartered Accountant?<span class="faq-icon">+</span></summary>
+        <div class="faq-body">Your CA continues handling compliance — GST, statutory filings, audit. That's the engagement and it stays unchanged. Shakti sits on top of the Tally / Zoho books your CA maintains and adds the management-decision layer she never had as a separate product. For MUDRA applications, Shakti automates the standardised data assembly so your CA reviews and signs off — instead of building the spreadsheet from scratch.</div>
       </details>
 
       <details class="faq reveal d1">
         <summary>How is Shakti different from the main FinLytTech product?<span class="faq-icon">+</span></summary>
-        <div class="faq-body">Same financial intelligence engine, women-intentional UX. Plain-language labels, vernacular UI, monthly literacy programme, MUDRA-Ready Score, Samuh SHG accounting. ₹299/mo vs. ₹999/mo for the core product — designed for micro-business margins.</div>
+        <div class="faq-body">Same financial intelligence engine, women-intentional UX. Plain-language labels, vernacular UI, monthly literacy programme, MUDRA-Ready Score, Samuh SHG accounting. ₹299/mo vs. ₹999/mo for the core product — priced for micro-business margins.</div>
       </details>
 
       <details class="faq reveal d1">
         <summary>What is the MUDRA-Ready Score and how is it calculated?<span class="faq-icon">+</span></summary>
-        <div class="faq-body">A credit-readiness score generated automatically after 6 months of Shakti usage. Six components: business vintage (15%), revenue consistency (25%), cash flow health (20%), debt servicing capacity (20%), debtor quality (10%), SHG track record (10%). Sold as a ₹499 one-time report.</div>
+        <div class="faq-body">A credit-readiness score generated automatically after 6 months of Shakti usage. Six components: business vintage (15%), revenue consistency (25%), cash flow health (20%), debt servicing capacity (20%), debtor quality (10%), SHG track record (10%). Sold as a ₹499 one-time report that packages the score, scheme match, lender list and projected financials into one lender-ready application.</div>
       </details>
 
       <details class="faq reveal d1">
@@ -1420,7 +1529,7 @@
 
       <details class="faq reveal d1">
         <summary>What is Samuh?<span class="faq-icon">+</span></summary>
-        <div class="faq-body">Samuh is Shakti's SHG accounting product for Self-Help Group treasurers. ₹99/month per SHG. WhatsApp-native entry — the treasurer types <em>"Sunita ne ₹500 jamaa kiya"</em> and Samuh posts it. Generates the NABARD compliance report bank linkage officers want. Hindi, Tamil, Telugu, Kannada, Marathi.</div>
+        <div class="faq-body">Samuh is Shakti's SHG accounting product for Self-Help Group treasurers. ₹99/month per SHG. WhatsApp-native entry — the treasurer types <em>"Sunita ne ₹500 jamaa kiya"</em> and Samuh posts it to the group's ledger. Generates the NABARD compliance report bank linkage officers want. Hindi, Tamil, Telugu, Kannada, Marathi.</div>
       </details>
 
       <details class="faq reveal d1">
@@ -1430,7 +1539,7 @@
 
       <details class="faq reveal d1">
         <summary>Is there a free trial?<span class="faq-icon">+</span></summary>
-        <div class="faq-body">Yes — 14 days of Shakti Core (₹299/mo tier), no credit card required. Connect your data and generate your first MIS report before paying anything. Razorpay handles billing.</div>
+        <div class="faq-body">Yes — 14 days of Shakti Core (₹299/mo tier), no credit card required. Connect your data and generate your first dashboard before paying anything. Razorpay handles billing.</div>
       </details>
 
       <details class="faq reveal d1">
@@ -1439,13 +1548,13 @@
       </details>
 
       <details class="faq reveal d1">
-        <summary>What if I'm a CA serving women clients?<span class="faq-icon">+</span></summary>
-        <div class="faq-body">Our CA Partner Programme white-labels Shakti for your firm — deploy across all your women clients at once, earn 10–15% commission, position your firm as a women's finance specialist. Pricing scales with client count. See the For CAs section above.</div>
+        <summary>I'm a CA. How does the partner programme work?<span class="faq-icon">+</span></summary>
+        <div class="faq-body">Our CA Partner Programme white-labels Shakti for your firm — deploy across your woman-led clients at once, earn 10–15% recurring commission, position your practice in the fastest-growing borrower segment. Pricing scales with client count. See the For CAs section above or write to founder@finlyt.net with "CA partner" in the subject.</div>
       </details>
 
       <details class="faq reveal d1">
         <summary>What is Maya?<span class="faq-icon">+</span></summary>
-        <div class="faq-body">Maya is Shakti's revenue intelligence layer for Shakti Pro users with 12+ months of data. Analyses customer concentration, seasonal patterns, margin trends, debtor recovery sequences. Outputs growth recommendations grounded in your actual numbers. Bundled in Shakti Pro at no extra cost.</div>
+        <div class="faq-body">Maya is Shakti's revenue intelligence layer for Shakti Pro users with 12+ months of data. Analyses customer concentration, seasonal patterns, margin trends, debtor recovery sequences. Outputs growth recommendations grounded in actual numbers. Bundled in Shakti Pro at no extra cost.</div>
       </details>
 
       <details class="faq reveal d1">
@@ -1460,7 +1569,7 @@
     <div class="reveal center">
       <div class="section-label">Early access</div>
       <h2 class="section-h2">Start your trial<br><em>or join the waitlist.</em></h2>
-      <p class="section-sub">14-day free Shakti trial. Or drop your email and we'll send you onboarding details for the path that fits how you keep books today.</p>
+      <p class="section-sub">14-day free Shakti trial. Or drop your email and we'll send onboarding details for the path that fits how you keep books today.</p>
     </div>
 
     <div class="waitlist reveal">
@@ -1486,7 +1595,7 @@
           <span><span class="w-ink">fin</span><span class="w-accent">lyt</span><span class="w-ink">tech</span></span>
           <span class="w-sub">Shakti</span>
         </span>
-        <div class="f-copy">A FinLytTech vertical for women entrepreneurs and Self-Help Groups across India. Built in India, for India. By Chartered Accountants.</div>
+        <div class="f-copy">A FinLytTech vertical for women entrepreneurs and Self-Help Groups across India. Built by Chartered Accountants, alongside Chartered Accountants.</div>
       </div>
       <div class="f-col">
         <h6>Products</h6>
@@ -1521,7 +1630,6 @@
   </footer>
 
   <script>
-    // Sidebar drawer
     (function () {
       const overlay = document.getElementById('sidebar-overlay');
       const sidebar = document.getElementById('sidebar');
@@ -1537,7 +1645,6 @@
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hide(); });
     }());
 
-    // Reveal-on-scroll
     (function () {
       if (!('IntersectionObserver' in window)) { document.querySelectorAll('.reveal').forEach((e) => e.classList.add('visible')); return; }
       const io = new IntersectionObserver((entries) => {
@@ -1548,7 +1655,6 @@
       document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
     }());
 
-    // Waitlist
     (function () {
       const API = 'https://finlyt-backend.onrender.com/api/enquiry';
       const form = document.getElementById('waitlist-form');
