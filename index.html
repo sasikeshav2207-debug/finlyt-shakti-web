@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FinLytTech Shakti — Know Your Numbers · Access Credit · Grow Revenue</title>
+  <meta name="description" content="Financial intelligence for India's women entrepreneurs. Plain-English MIS, MUDRA-Ready credit reports, and SHG accounting from your Tally / Zoho books. From ₹99/month." />
+  <link rel="canonical" href="https://shakti.finlyt.net/" />
+
+  <!-- OG / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shakti.finlyt.net/" />
+  <meta property="og:title" content="FinLytTech Shakti — Financial Intelligence for India's Women Entrepreneurs" />
+  <meta property="og:description" content="Plain-English MIS, MUDRA-Ready credit reports, and SHG accounting. From ₹99/month. Built by a CA, designed for first-generation women entrepreneurs." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FinLytTech Shakti — Know Your Numbers · Access Credit · Grow Revenue" />
+  <meta name="twitter:description" content="Financial intelligence for India's women entrepreneurs. Plain-English MIS, MUDRA-Ready credit reports, SHG accounting." />
+
+  <!-- JSON-LD: Organization + product family -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FinLytTech Shakti",
+    "url": "https://shakti.finlyt.net",
+    "logo": "https://shakti.finlyt.net/assets/shakti-logo.svg",
+    "description": "Financial inclusion platform for women entrepreneurs and SHGs in India. Shakti (individual MIS), Samuh (SHG accounting), Maya (revenue intelligence)."
+  }
+  </script>
+
+  <!-- Fonts: DM Sans (UI), DM Serif Display (headlines), Noto Serif Devanagari (Hindi line) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Noto+Serif+Devanagari:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── PALETTE (locked) ──────────────────────────────────────────────
+       Primary indigo  #1E3A5F  buttons, section heads, score bar
+       Wordmark accent #C24E2E  the "lyt" letters
+       Coral           #D87A6A  charts, secondary CTAs, tagline accent
+       Brass gold      #C9A961  MUDRA-Ready highlights, "new" pills
+       Surface         #F8F1E3  page background (off-white shell)
+       Ink             #1A2332  body text
+       Soft surface    #FFFFFF  cards on top of surface
+       Border          rgba(26,35,50,0.08)
+    */
+    :root {
+      --indigo: #1E3A5F;
+      --indigo-deep: #142540;
+      --terracotta: #C24E2E;
+      --coral: #D87A6A;
+      --brass: #C9A961;
+      --surface: #F8F1E3;
+      --surface-tinted: #F1E8D2;
+      --ink: #1A2332;
+      --muted: #5B6878;
+      --line: rgba(26,35,50,0.10);
+      --card-bg: #FFFFFF;
+      --serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+      --devanagari: 'Noto Serif Devanagari', serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--sans);
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--indigo); }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ─── Top nav ───────────────────────────────────────────────────── */
+    nav.top {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(248,241,227,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.top .nav-inner {
+      max-width: 1180px; margin: 0 auto;
+      padding: 14px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px;
+    }
+    .wordmark {
+      font-family: var(--serif);
+      font-size: 22px; line-height: 1;
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      display: inline-flex; align-items: baseline; gap: 8px;
+    }
+    .wordmark .w-ink { color: var(--ink); }
+    .wordmark .w-accent { color: var(--terracotta); }
+    .wordmark .w-sub {
+      font-family: var(--sans); font-size: 10px;
+      font-weight: 700; letter-spacing: 0.16em;
+      color: var(--brass);
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border: 1px solid var(--brass);
+      border-radius: 100px;
+      align-self: center;
+    }
+    .nav-links { display: flex; gap: 20px; align-items: center; font-size: 14px; }
+    .nav-links a { text-decoration: none; color: var(--ink); font-weight: 500; }
+    .nav-links a:hover { color: var(--indigo); }
+    .nav-cta {
+      padding: 8px 14px; border-radius: 8px;
+      background: var(--indigo); color: var(--surface) !important;
+      font-weight: 600; font-size: 13px;
+    }
+    @media (max-width: 720px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+    }
+
+    /* ─── Hero ──────────────────────────────────────────────────────── */
+    section.hero {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+      text-align: center;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 18px;
+    }
+    h1.hero-headline {
+      font-family: var(--serif);
+      font-size: clamp(32px, 5.6vw, 56px);
+      line-height: 1.08;
+      letter-spacing: -0.015em;
+      margin: 0 0 14px;
+      color: var(--ink);
+    }
+    h1.hero-headline em {
+      font-style: italic; color: var(--indigo);
+    }
+    p.hero-tagline {
+      max-width: 660px;
+      margin: 0 auto 24px;
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .hero-vernacular {
+      max-width: 540px; margin: 0 auto 30px;
+      font-family: var(--devanagari);
+      font-size: 17px;
+      color: var(--indigo);
+      padding: 12px 18px;
+      border-radius: 10px;
+      border-left: 3px solid var(--terracotta);
+      background: var(--surface-tinted);
+      line-height: 1.5;
+    }
+    .hero-ctas {
+      display: flex; gap: 12px; flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 24px;
+      border-radius: 9px;
+      font-size: 14.5px; font-weight: 600;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      font-family: inherit;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--indigo); color: var(--surface);
+      box-shadow: 0 6px 18px rgba(30,58,95,0.25);
+    }
+    .btn-primary:hover { background: var(--indigo-deep); }
+    .btn-secondary {
+      background: transparent; color: var(--indigo);
+      border-color: var(--indigo);
+    }
+    .btn-secondary:hover { background: rgba(30,58,95,0.06); }
+    .hero-meta {
+      font-size: 12.5px; color: var(--muted);
+      margin-top: 10px;
+    }
+
+    /* ─── Hero showcase strip ──────────────────────────────────────── */
+    .showcase {
+      max-width: 1100px; margin: 24px auto 0;
+      padding: 0 24px;
+    }
+    .showcase-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 20px 60px rgba(26,35,50,0.08);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+    @media (max-width: 760px) { .showcase-card { grid-template-columns: 1fr; gap: 18px; } }
+    .showcase-left .label {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 8px;
+    }
+    .showcase-left h3 {
+      font-family: var(--serif); font-size: 28px; line-height: 1.2;
+      margin: 0 0 8px; color: var(--ink);
+    }
+    .showcase-left p {
+      font-size: 14px; color: var(--muted); margin: 0;
+    }
+    .score-tile {
+      background: var(--surface);
+      border: 1.5px solid var(--brass);
+      border-radius: 12px;
+      padding: 22px 24px;
+    }
+    .score-tile .st-label {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 4px;
+    }
+    .score-tile .st-score {
+      font-family: var(--serif); font-size: 56px; line-height: 1;
+      color: var(--indigo);
+    }
+    .score-tile .st-cap {
+      font-size: 16px; color: var(--muted); font-weight: 400; margin-left: 4px;
+      font-family: var(--sans);
+    }
+    .score-tile .st-meta {
+      font-size: 12px; color: var(--muted); margin-top: 6px;
+    }
+    .score-bar {
+      height: 6px; background: rgba(26,35,50,0.08);
+      border-radius: 3px; overflow: hidden; margin-top: 10px;
+    }
+    .score-bar > div { height: 100%; background: var(--indigo); transition: width 0.5s; }
+
+    /* ─── Section helpers ──────────────────────────────────────────── */
+    section.block {
+      max-width: 1180px; margin: 0 auto;
+      padding: 56px 24px;
+    }
+    .section-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 8px;
+    }
+    .section-h2 {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.6vw, 38px);
+      line-height: 1.18; letter-spacing: -0.01em;
+      margin: 0 0 14px; color: var(--ink);
+    }
+    .section-h2 em { font-style: italic; color: var(--indigo); }
+    .section-sub {
+      max-width: 700px; font-size: 15px; color: var(--muted);
+      margin: 0 0 36px; line-height: 1.7;
+    }
+
+    /* ─── Problem (3 layers) ───────────────────────────────────────── */
+    .problem-grid {
+      display: grid; gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .problem-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px 24px;
+    }
+    .problem-card .pc-layer {
+      font-size: 10.5px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 8px;
+    }
+    .problem-card h4 {
+      font-family: var(--serif); font-size: 19px;
+      margin: 0 0 8px; color: var(--ink);
+    }
+    .problem-card p {
+      font-size: 13.5px; color: var(--muted);
+      margin: 0; line-height: 1.6;
+    }
+
+    /* ─── 3 products ──────────────────────────────────────────────── */
+    .product-grid {
+      display: grid; gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px 26px;
+      display: flex; flex-direction: column;
+    }
+    .product-card .pc-badge {
+      align-self: flex-start;
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 100px;
+      background: rgba(30,58,95,0.08); color: var(--indigo);
+      margin-bottom: 14px;
+    }
+    .product-card.featured .pc-badge {
+      background: var(--brass); color: var(--ink);
+    }
+    .product-card .pc-name {
+      font-family: var(--serif); font-size: 24px;
+      margin: 0 0 4px; color: var(--ink);
+    }
+    .product-card .pc-price {
+      font-size: 14px; color: var(--coral); font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .product-card .pc-desc {
+      font-size: 13.5px; color: var(--muted);
+      margin: 0 0 16px; line-height: 1.6;
+    }
+    .product-card ul {
+      list-style: none; padding: 0; margin: 0 0 18px;
+      display: flex; flex-direction: column; gap: 8px;
+      font-size: 13px; color: var(--ink);
+    }
+    .product-card ul li {
+      display: flex; gap: 9px; align-items: flex-start;
+      line-height: 1.5;
+    }
+    .product-card ul li::before {
+      content: '✓'; color: var(--indigo); font-weight: 700;
+      flex-shrink: 0;
+    }
+    .product-card .pc-cta {
+      margin-top: auto;
+      text-align: center;
+      padding: 11px 18px;
+      border-radius: 9px;
+      font-size: 13.5px; font-weight: 600;
+      text-decoration: none;
+      background: var(--surface);
+      color: var(--indigo);
+      border: 1px solid var(--indigo);
+    }
+    .product-card.featured .pc-cta {
+      background: var(--indigo); color: var(--surface); border-color: var(--indigo);
+    }
+
+    /* ─── Journey ─────────────────────────────────────────────────── */
+    .journey-track {
+      display: grid; gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      position: relative;
+    }
+    .journey-step {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 20px;
+      position: relative;
+    }
+    .js-num {
+      font-family: var(--serif);
+      font-size: 28px; line-height: 1;
+      color: var(--terracotta);
+      margin-bottom: 6px;
+    }
+    .journey-step h5 {
+      font-family: var(--serif); font-size: 17px;
+      margin: 0 0 6px; color: var(--ink);
+    }
+    .journey-step p { font-size: 12.5px; color: var(--muted); margin: 0; line-height: 1.55; }
+
+    /* ─── Founders ────────────────────────────────────────────────── */
+    .founders {
+      display: grid; gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .founder-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px 26px;
+    }
+    .founder-card .fc-role {
+      font-size: 10.5px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 6px;
+    }
+    .founder-card h4 {
+      font-family: var(--serif); font-size: 22px;
+      margin: 0 0 6px; color: var(--ink);
+    }
+    .founder-card .fc-creds {
+      font-size: 12.5px; color: var(--indigo); font-weight: 600;
+      margin: 0 0 12px;
+    }
+    .founder-card p {
+      font-size: 13.5px; color: var(--muted);
+      margin: 0; line-height: 1.65;
+    }
+
+    /* ─── Community CTA ──────────────────────────────────────────── */
+    .community {
+      background: linear-gradient(135deg, var(--indigo) 0%, var(--indigo-deep) 100%);
+      color: var(--surface);
+      border-radius: 18px;
+      padding: 42px 44px;
+      text-align: center;
+      margin: 36px auto 0;
+      max-width: 900px;
+    }
+    .community .c-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 10px;
+    }
+    .community h3 {
+      font-family: var(--serif); font-size: clamp(24px, 3vw, 32px);
+      margin: 0 0 10px; line-height: 1.2;
+    }
+    .community p {
+      font-size: 14.5px; max-width: 580px; margin: 0 auto 22px;
+      color: rgba(248,241,227,0.85);
+    }
+    .community .btn-primary {
+      background: var(--brass); color: var(--ink);
+      box-shadow: 0 6px 18px rgba(201,169,97,0.4);
+    }
+    .community .btn-primary:hover { background: #b89651; }
+
+    /* ─── Final waitlist ─────────────────────────────────────────── */
+    .waitlist {
+      max-width: 540px; margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px 30px;
+      text-align: center;
+    }
+    .waitlist h3 {
+      font-family: var(--serif); font-size: 24px;
+      margin: 0 0 8px;
+    }
+    .waitlist p {
+      font-size: 13.5px; color: var(--muted); margin: 0 0 18px;
+    }
+    .waitlist form {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      justify-content: center;
+    }
+    .waitlist input[type="email"] {
+      flex: 1; min-width: 220px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      font-size: 14px;
+      font-family: inherit;
+      background: var(--surface);
+      color: var(--ink);
+    }
+    .waitlist input:focus { outline: 2px solid var(--brass); outline-offset: 1px; }
+    .waitlist .success {
+      margin-top: 14px; padding: 10px 14px;
+      background: rgba(29,158,117,0.10);
+      border: 1px solid rgba(29,158,117,0.3);
+      color: #14784f;
+      border-radius: 8px;
+      font-size: 13px;
+      display: none;
+    }
+    .waitlist .success.show { display: block; }
+    .waitlist .error {
+      margin-top: 14px; padding: 10px 14px;
+      background: rgba(194,78,46,0.10);
+      border: 1px solid rgba(194,78,46,0.3);
+      color: var(--terracotta);
+      border-radius: 8px;
+      font-size: 13px;
+      display: none;
+    }
+    .waitlist .error.show { display: block; }
+
+    /* ─── Footer ─────────────────────────────────────────────────── */
+    footer {
+      margin-top: 60px;
+      background: var(--ink);
+      color: rgba(248,241,227,0.8);
+      padding: 36px 24px 24px;
+    }
+    footer .f-inner {
+      max-width: 1180px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      gap: 24px; align-items: flex-start;
+    }
+    footer .f-brand .wordmark .w-ink { color: var(--surface); }
+    footer .f-copy { font-size: 12px; margin-top: 8px; }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; font-size: 13px; }
+    footer .f-links a {
+      color: rgba(248,241,227,0.75); text-decoration: none;
+    }
+    footer .f-links a:hover { color: var(--brass); }
+    footer .f-bottom {
+      max-width: 1180px; margin: 28px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(248,241,227,0.10);
+      font-size: 11.5px;
+      color: rgba(248,241,227,0.55);
+      text-align: center;
+    }
+
+    /* ─── A11y / motion ──────────────────────────────────────────── */
+    :focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 4px; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═════════════════════════════ NAV ═════════════════════════════ -->
+  <nav class="top">
+    <div class="nav-inner">
+      <a class="wordmark" href="/" aria-label="FinLytTech Shakti home">
+        <span><span class="w-ink">fin</span><span class="w-accent">lyt</span><span class="w-ink">tech</span></span>
+        <span class="w-sub">Shakti</span>
+      </a>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#mudra">MUDRA-Ready</a>
+        <a href="#community">Community</a>
+        <a class="nav-cta" href="#waitlist">Start free trial</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═════════════════════════════ HERO ════════════════════════════ -->
+  <section class="hero">
+    <div class="eyebrow">Financial intelligence for India's women entrepreneurs</div>
+    <h1 class="hero-headline">Your business,<br><em>finally legible.</em></h1>
+    <p class="hero-tagline">
+      Plain-English MIS from your Tally or Zoho books. A credit-ready MUDRA report when you need it.
+      SHG accounting for your group treasurer. From <strong>₹99/month</strong>. Built by a CA, designed for
+      the entrepreneur who has never seen her own P&amp;L.
+    </p>
+    <div class="hero-vernacular">अपना व्यापार समझें · ऋण पाएं · आगे बढ़ें</div>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#waitlist">Start free trial →</a>
+      <a class="btn btn-secondary" href="#products">See how it works</a>
+    </div>
+    <div class="hero-meta">14-day free trial · No credit card · Tally Prime &amp; Zoho Books</div>
+
+    <div class="showcase">
+      <div class="showcase-card">
+        <div class="showcase-left">
+          <div class="label">The Credit Bridge</div>
+          <h3>From Tally entries to a MUDRA-Ready loan application — in under 60 seconds.</h3>
+          <p>Six months of Shakti data becomes a verified credit score, a scheme match (Shishu / Kishore / Tarun / Stand-Up India), the top 3 lender names, and the 2-year projected financials a CA would charge ₹15,000 to prepare.</p>
+        </div>
+        <div class="score-tile">
+          <div class="st-label">MUDRA-Ready Score</div>
+          <div class="st-score">78<span class="st-cap">/ 100</span></div>
+          <div class="st-meta">Qualifies you for <strong style="color:var(--indigo)">Tarun</strong> tier · ₹5L–₹10L</div>
+          <div class="score-bar"><div style="width:78%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ THREE LAYERS ════════════════════════ -->
+  <section class="block">
+    <div class="section-label">The problem we solve</div>
+    <h2 class="section-h2">Three layers of financial invisibility.<br><em>One platform.</em></h2>
+    <p class="section-sub">India has 12 million SHGs (88% women), 20% women-owned MSMEs on Udyam, and MUDRA disbursements of ₹23.2 lakh crore. Yet women receive only 7.09% of formal MSME credit. The gap isn't ambition — it's documentation. Shakti closes all three.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="pc-layer">Layer 1</div>
+        <h4>The SHG treasurer</h4>
+        <p>Manages ₹2–5 lakh of rotating group savings on a paper register. NABARD's e-Shakti collects her data but gives her nothing back. Errors in accounts get her group's bank-linkage loan rejected. <strong style="color:var(--indigo)">Samuh</strong> gives her digital books in her language, on her phone.</p>
+      </div>
+      <div class="problem-card">
+        <div class="pc-layer">Layer 2</div>
+        <h4>The individual entrepreneur</h4>
+        <p>Runs a tailoring unit, food business, retail or services firm. Has a CA filing GST. Has never seen her own P&amp;L. <strong style="color:var(--indigo)">Shakti</strong> gives her an AI MIS in plain English, her ratios as traffic lights, a one-click investor-ready PDF.</p>
+      </div>
+      <div class="problem-card">
+        <div class="pc-layer">Layer 3</div>
+        <h4>The credit applicant</h4>
+        <p>Eligible for MUDRA, Stand-Up India, PM Vishwakarma. Has 3 years of GST returns and a Tally ledger. Cannot convert any of it into a lender-ready application. <strong style="color:var(--indigo)">MUDRA-Ready Report</strong> auto-generates the full package for ₹499.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ PRODUCTS ════════════════════════════ -->
+  <section class="block" id="products">
+    <div class="section-label">Three products · One platform</div>
+    <h2 class="section-h2">Built for where she <em>actually is.</em></h2>
+    <p class="section-sub">A woman entrepreneur needs different tools at different stages of her financial life. Shakti accompanies her across all three.</p>
+
+    <div class="product-grid">
+
+      <!-- Shakti Core (Featured) -->
+      <div class="product-card featured">
+        <span class="pc-badge">Live</span>
+        <div class="pc-name">Shakti</div>
+        <div class="pc-price">₹299/mo Core · ₹399/mo Pro</div>
+        <p class="pc-desc">Auto-generated P&amp;L, balance sheet, cash flow, 12 ratios, AI narrative — in plain English, from your Tally or Zoho books.</p>
+        <ul>
+          <li>Did I make money this month?</li>
+          <li>What's coming in over the next 30 days?</li>
+          <li>Who owes me money and for how long?</li>
+          <li>12 ratios as traffic lights, not formulas</li>
+          <li>Investor / lender-ready PDF in one click</li>
+          <li>14-day free trial · no credit card</li>
+        </ul>
+        <a class="pc-cta" href="#waitlist">Start free trial →</a>
+      </div>
+
+      <!-- Samuh -->
+      <div class="product-card">
+        <span class="pc-badge">Free for first 500 SHGs</span>
+        <div class="pc-name">Samuh</div>
+        <div class="pc-price">₹99/mo per SHG</div>
+        <p class="pc-desc">SHG accounting for the treasurer. WhatsApp-native entry. NABARD-compliant reports. Hindi / Tamil / Telugu / Kannada / Marathi.</p>
+        <ul>
+          <li>Member register + savings tracker</li>
+          <li>Internal loan register + overdue alerts</li>
+          <li>Bank linkage loan tracking</li>
+          <li>WhatsApp data entry: <em>"Sunita ne ₹500 jamaa kiya"</em></li>
+          <li>NABARD compliance report — auto-generated</li>
+          <li>Group P&amp;L on the treasurer's phone</li>
+        </ul>
+        <a class="pc-cta" href="#waitlist">Join the waitlist →</a>
+      </div>
+
+      <!-- MUDRA-Ready Report -->
+      <div class="product-card" id="mudra">
+        <span class="pc-badge">After 6 months</span>
+        <div class="pc-name">MUDRA-Ready</div>
+        <div class="pc-price">₹499 per report</div>
+        <p class="pc-desc">Verified Shakti data → lender-ready credit application package. The document a CA charges ₹15,000+ to prepare.</p>
+        <ul>
+          <li>MUDRA-Ready Score (0–100) with improvement actions</li>
+          <li>Scheme match: Shishu / Kishore / Tarun / Stand-Up India</li>
+          <li>Top 3 recommended lenders for your geography</li>
+          <li>Projected EMI vs. your verified monthly surplus</li>
+          <li>2-year projected financials, auto-generated</li>
+          <li>Document checklist — what to carry to the bank</li>
+        </ul>
+        <a class="pc-cta" href="#waitlist">Build my report →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ JOURNEY ════════════════════════════ -->
+  <section class="block">
+    <div class="section-label">The Shakti journey</div>
+    <h2 class="section-h2">Know your numbers.<br><em>Access credit. Grow revenue.</em></h2>
+    <p class="section-sub">Every stage compounds the next. A Samuh member graduates to Shakti with her SHG repayment history as a credit signal. A Shakti user with 6 months of data unlocks her MUDRA-Ready Score. A Maya user converts revenue growth into a stronger Score and a higher loan tier.</p>
+
+    <div class="journey-track">
+      <div class="journey-step">
+        <div class="js-num">1</div>
+        <h5>SHG member</h5>
+        <p>Joins Samuh through her group. Builds 12 months of group savings + loan repayment history.</p>
+      </div>
+      <div class="journey-step">
+        <div class="js-num">2</div>
+        <h5>Individual entrepreneur</h5>
+        <p>Graduates to Shakti. Connects Tally / Zoho. First-ever financial report in plain English.</p>
+      </div>
+      <div class="journey-step">
+        <div class="js-num">3</div>
+        <h5>Credit applicant</h5>
+        <p>Six months of Shakti data. MUDRA-Ready Score auto-generated. First formal loan disbursed.</p>
+      </div>
+      <div class="journey-step">
+        <div class="js-num">4</div>
+        <h5>Growth entrepreneur</h5>
+        <p>Maya kicks in. Customer + margin intelligence. Revenue grows. Score improves. Next loan tier unlocks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ COMMUNITY ═══════════════════════════ -->
+  <section class="block" id="community">
+    <div class="community">
+      <div class="c-label">#ShakthiCircle</div>
+      <h3>Twelve months. Twelve playbooks. Built for her.</h3>
+      <p>A free monthly literacy session every month for a year. Each session paired with a one-page #BuildingforHer Playbook tied directly to your Shakti dashboard. Live-facilitated by Shakti's founding CA — recorded so you can replay anytime.</p>
+      <a class="btn btn-primary" href="#waitlist">Join the circle →</a>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ FOUNDERS ════════════════════════════ -->
+  <section class="block" id="founders">
+    <div class="section-label">Who's behind Shakti</div>
+    <h2 class="section-h2">Built by practitioners.<br><em>Not technologists guessing.</em></h2>
+    <p class="section-sub">Two Chartered Accountants. One built the financial intelligence engine that powers FinLytTech. The other brings the women-CA distribution network and is a 51%+ partner of the LLP — gender-intentionality at the entity level, not the marketing copy.</p>
+
+    <div class="founders">
+      <div class="founder-card">
+        <div class="fc-role">Founder &amp; CEO</div>
+        <h4>Sasidharan V</h4>
+        <p class="fc-creds">CA (ICAI) · MBA, IIM Ahmedabad (BPGP) · 15+ years Capital Markets, M&amp;A, FP&amp;A</p>
+        <p>Built FinLytTech's 10-layer Tally pipeline and AI MIS engine. Every financial intelligence feature is designed by someone who ran the same analysis for PE firms — not a technologist guessing what a CFO needs.</p>
+      </div>
+      <div class="founder-card">
+        <div class="fc-role">Co-founder &amp; Head of Partnerships</div>
+        <h4>CA Komal Jagdish Vishwakarma</h4>
+        <p class="fc-creds">CA (ICAI) · Apollo Hospitals ERP · Ex-BSE Ltd · 51%+ LLP partner</p>
+        <p>Direct network of women CA firms — the primary source of Shakti's CA partner pilot. Brings the product, the credibility, and the distribution channel simultaneously. Lived understanding of what women entrepreneurs need from their financial tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ WAITLIST ════════════════════════════ -->
+  <section class="block" id="waitlist">
+    <div class="section-label">Early access</div>
+    <h2 class="section-h2" style="text-align:center">Be among the first 500.</h2>
+    <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center;max-width:580px">Free Shakti trial. Samuh free for the first 500 SHGs (covered by the IIMA Ventures grant). One email and you're in.</p>
+
+    <div class="waitlist">
+      <form id="waitlist-form">
+        <input type="email" name="email" required placeholder="your@work.email" autocomplete="email" />
+        <input type="hidden" name="source" value="Shakti Web — waitlist" />
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
+        <button class="btn btn-primary" type="submit">Reserve my spot →</button>
+      </form>
+      <div class="success" id="waitlist-success">✓ You're on the list. Look out for an onboarding email.</div>
+      <div class="error" id="waitlist-error"></div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer>
+    <div class="f-inner">
+      <div class="f-brand">
+        <span class="wordmark" style="font-size:20px">
+          <span><span class="w-ink">fin</span><span class="w-accent">lyt</span><span class="w-ink">tech</span></span>
+          <span class="w-sub" style="border-color:var(--brass);color:var(--brass)">Shakti</span>
+        </span>
+        <div class="f-copy">A FinLytTech vertical · Built in India for India</div>
+      </div>
+      <div class="f-links">
+        <a href="https://finlyt.net" target="_blank" rel="noopener">Main site</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="https://dashboard.finlyt.net" target="_blank" rel="noopener">Dashboard</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      © 2026 Finlyt Technologies LLP · FinLytTech™ and Shakti™ are trademarks · <a href="https://finlyt.net/privacy" target="_blank" rel="noopener" style="color:rgba(248,241,227,0.7)">DPDP Compliance</a>
+    </div>
+  </footer>
+
+  <!-- ═════════════════════════ JS ══════════════════════════════════ -->
+  <script>
+    // Waitlist submit — posts to the existing FinLytTech enquiry endpoint
+    // with source='Shakti Web — waitlist' so admin /admin/enquiries tags
+    // these distinctly from the main finlyt.net enquiries.
+    (function () {
+      const API = 'https://finlyt-backend.onrender.com/api/enquiry';
+      const form = document.getElementById('waitlist-form');
+      const success = document.getElementById('waitlist-success');
+      const error = document.getElementById('waitlist-error');
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        success.classList.remove('show');
+        error.classList.remove('show');
+        const btn = form.querySelector('button');
+        const origBtn = btn.textContent;
+        btn.textContent = 'Sending…';
+        btn.disabled = true;
+        try {
+          const fd = new FormData(form);
+          const body = {
+            email: fd.get('email'),
+            source: fd.get('source'),
+            website: fd.get('website'), // honeypot — backend drops if non-empty
+          };
+          const r = await fetch(API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+          });
+          if (!r.ok) {
+            const data = await r.json().catch(() => ({}));
+            throw new Error(data?.error || 'HTTP ' + r.status);
+          }
+          form.reset();
+          success.classList.add('show');
+        } catch (err) {
+          error.textContent = 'Could not save your details. Please try again or write to founder@finlyt.net.';
+          error.classList.add('show');
+        } finally {
+          btn.textContent = origBtn;
+          btn.disabled = false;
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
